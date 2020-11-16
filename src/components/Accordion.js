@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
