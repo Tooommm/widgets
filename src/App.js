@@ -4,6 +4,7 @@ import Search from './components/Search';
 import Dropdown from './components/Dropdown';
 import Translate from './components/Translate';
 import Header from './components/Header';
+import Video from './components/Video';
 import Route from './components/Route';
 
 const items = [
@@ -53,6 +54,9 @@ export default () => {
       </Route>
       <Route path="/translate">
         <Translate  />
+      </Route>
+      <Route path="/video">
+        <Video  />
       </Route>
     </div>
 
