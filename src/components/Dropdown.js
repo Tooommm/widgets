@@ -36,22 +36,26 @@ const Dropdown = ({ options, selected, onSelectedChange, label }) => {
   });
 
   return (
-    <div ref={ref} className="ui form">
-      <div className="field">
-        <label className="label">{label}</label>
-        <div
-          onClick={() => setOpen(!open)}
-          className={`ui selection dropdown ${open ? 'visible active' : ''}`}
-        >
-          <i className="dropdown icon"></i>
-          <div className="text">{selected.label}</div>
-          <div className={`menu ${open ? 'visible transition' : ''}`}>
-            {renderedOptions}
+    <div>
+      <div ref={ref} className="ui form">
+        <div className="field">
+          <label className="label">{label}</label>
+          <div
+            onClick={() => setOpen(!open)}
+            className={`ui selection dropdown ${open ? 'visible active' : ''}`}
+          >
+            <i className="dropdown icon"></i>
+            <div className="text">{selected.label}</div>
+            <div className={`menu ${open ? 'visible transition' : ''}`}>
+              {renderedOptions}
+            </div>
           </div>
         </div>
       </div>
+      <hr />
+      <h3 className="ui header" style={{color: selected.value}}>this is {selected.label}</h3>
     </div>
-    );
+  );
 };
 
 export default Dropdown;
