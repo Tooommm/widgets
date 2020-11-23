@@ -51,8 +51,8 @@ const Dropdown = ({ options, selected, onSelectedChange, label }) => {
             </div>
           </div>
         </div>
-      </div>
       <hr />
+      </div>
       <h3 className="ui header" style={{color: selected.value}}>this is {selected.label}</h3>
     </div>
   );
