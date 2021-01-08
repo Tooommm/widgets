@@ -37,7 +37,7 @@ const options = [
   }
 ];
 
-export default () => {
+const App = () => {
   const [selected, setSelected] = useState(options[0])
 
   return (
@@ -62,3 +62,6 @@ export default () => {
 
   );
 };
+
+
+export default App;
