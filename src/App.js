@@ -9,7 +9,7 @@ import Route from './components/Route';
 
 const items = [
   {
-    title: 'What is React?',
+    title: 'What is React? ',
     content: 'React is a front end javascript framework'
   },
   {
